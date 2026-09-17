@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Shubhangi R. Patil-Solanki | Academic & Research Portfolio</title>
+  <meta name="description" content="Official academic portfolio of Dr. Shubhangi R. Patil-Solanki. Ph.D. in Computer Engineering, M.Tech AI Gold Medalist, Associate Professor at PCET's Pimpri Chinchwad University, Pune. Specializing in Deep Learning, Medical Image Analysis, and Computer Vision.">
+  <meta name="keywords" content="Dr. Shubhangi Patil, Shubhangi Solanki, PCET Pimpri Chinchwad University, Sinhgad Institute of Technology, Computer Science, Deep Learning, Medical Imaging, AI, IEEE, ACM">
+  <meta name="author" content="Dr. Shubhangi R. Patil-Solanki">
+  
+  <!-- Favicon Monogram -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%233b82f6%22/><text y=%2265%22 x=%2250%22 font-size=%2250%22 font-family=%22sans-serif%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22>SP</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Interactive Neural Background Canvas -->
+  <canvas id="neuralCanvas"></canvas>
+
+  <!-- Site Navigation -->
+  <header class="site-header" id="header">
+    <div class="container navbar">
+      <a href="#home" class="nav-brand" aria-label="Home">
+        <div class="brand-monogram">SP</div>
+        <div class="brand-info">
+          <h3>Dr. Shubhangi Patil-Solanki</h3>
+          <span>Ph.D. • Associate Professor, CSE</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#qualifications" class="nav-link">Education</a>
+        <a href="#ip" class="nav-link">Patents & IPR</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#teaching" class="nav-link">Teaching</a>
+        <a href="#memberships" class="nav-link">Memberships</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg id="themeIconSun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="themeIconMoon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="assets/Dr_Shubhangi_Patil_CV.pdf" class="btn btn-primary" download="Dr_Shubhangi_Patil_Resume.pdf" id="cvDownloadBtn" title="Download Updated Resume PDF">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>CV</span>
+        </a>
+
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          <span>M.Tech AI Gold Medalist • Ph.D. in Computer Engineering</span>
+        </div>
+
+        <h1 class="hero-title">
+          Dr. <span class="name-highlight">Shubhangi R. Patil-Solanki</span>
+        </h1>
+
+        <div class="hero-designation">
+          Associate Professor, Department of Computer Science & Engineering
+        </div>
+
+        <div class="hero-affiliation">
+          School of Engineering & Technology, PCET's Pimpri Chinchwad University, Pune
+        </div>
+
+        <p class="hero-lead">
+          Distinguished academician, researcher, and educational leader with <strong>23+ years of expertise</strong>. Pioneer in Artificial Intelligence, Deep Learning architectures for medical image denoising and brain tumor diagnosis, and patent holder for novel intelligent computing systems.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#publications" class="btn btn-primary" id="heroPubsBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            <span>Research Papers</span>
+          </a>
+
+          <a href="#ip" class="btn btn-secondary" id="heroIpBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span>Patents & Copyrights</span>
+          </a>
+
+          <a href="#contact" class="btn btn-secondary" id="heroContactBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>Get in Touch</span>
+          </a>
+        </div>
+
+        <div class="hero-stats-strip">
+          <div class="stat-item">
+            <span class="stat-number"><span class="counter-num" data-target="23">0</span><span class="stat-plus">+</span></span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number"><span class="counter-num" data-target="11">0</span><span class="stat-plus">+</span></span>
+            <span class="stat-label">Publications</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number"><span class="counter-num" data-target="2">0</span></span>
+            <span class="stat-label">Patents</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number"><span class="counter-num" data-target="3">0</span></span>
+            <span class="stat-label">Copyrights</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-card">
+          <div class="portrait-frame">
+            <img src="assets/profile.jpg" alt="Dr. Shubhangi R. Patil-Solanki" class="portrait-img" id="heroProfileImg">
+          </div>
+          <div class="portrait-floating-badge">
+            <span class="floating-pulse"></span>
+            <span>PCET's Pimpri Chinchwad University</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Executive Profile</span>
+        <h2 class="section-title">About Dr. Shubhangi Patil-Solanki</h2>
+        <p class="section-subtitle">Bridging theoretical computer science and cutting-edge deep learning systems</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-block">
+          <p>
+            Dr. Shubhangi R. Patil-Solanki is a passionate academician, researcher, and educator who has spent over 23 years mentoring undergraduate and graduate students, driving curriculum modernization, and contributing to institutional excellence. She currently serves as an <strong>Associate Professor in the Department of Computer Science & Engineering</strong> at the School of Engineering & Technology, PCET's Pimpri Chinchwad University (PCU), Pune.
+          </p>
+          <p>
+            Prior to joining PCU, she served for more than a decade as <strong>Head of the Department (HOD)</strong> and Associate Professor in Computer Engineering at Sinhgad Institute of Technology (SIT), Lonavala. Throughout her career, she has held key administrative responsibilities including Department NBA & NAAC Accreditation Coordinator, University Staff Selection Committee Member at Mumbai University, and Subject Chairman at North Maharashtra University.
+          </p>
+          <p>
+            Her research focus centers on <strong>Artificial Intelligence, Deep Learning architectures, and Medical Image Processing</strong>, specifically fractional-order variational CNNs for image denoising and automated MRI brain tumor classification.
+          </p>
+
+          <div class="about-highlights-list">
+            <div class="about-highlight-item">
+              <div class="highlight-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <span>Ph.D. in Computer Science & Engg (2024)</span>
+            </div>
+            <div class="about-highlight-item">
+              <div class="highlight-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <span>Gold Medalist in M.Tech (AI), RGPV Bhopal</span>
+            </div>
+            <div class="about-highlight-item">
+              <div class="highlight-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <span>2 Published Patents & 3 AI Copyrights</span>
+            </div>
+            <div class="about-highlight-item">
+              <div class="highlight-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <span>Professional Member: ACM, IEEE, ISTE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-pillars-grid">
+          <div class="glass-card pillar-card">
+            <div class="pillar-icon-box pillar-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+            </div>
+            <div class="pillar-content">
+              <h4>Deep Learning for Medical Imaging</h4>
+              <p>Designing advanced CNN and deep learning classifiers for magnetic resonance imaging (MRI) diagnostics and automated brain tumor detection.</p>
+            </div>
+          </div>
+
+          <div class="glass-card pillar-card">
+            <div class="pillar-icon-box pillar-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+            </div>
+            <div class="pillar-content">
+              <h4>Medical Image Denoising Hardware & Algorithms</h4>
+              <p>Invented patented electronic devices and fractional-order variational residual CNN architectures to eliminate noise while preserving clinical fidelity.</p>
+            </div>
+          </div>
+
+          <div class="glass-card pillar-card">
+            <div class="pillar-icon-box pillar-emerald">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line></svg>
+            </div>
+            <div class="pillar-content">
+              <h4>Computer Vision & Smart Agri-Tech</h4>
+              <p>Patented stereo-vision fruit counting technologies and machine vision methodologies for Jalopatra plant leaf disease detection.</p>
+            </div>
+          </div>
+
+          <div class="glass-card pillar-card">
+            <div class="pillar-icon-box pillar-gold">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            </div>
+            <div class="pillar-content">
+              <h4>Applied AI & Optimization</h4>
+              <p>Explored evolutionary optimization algorithms (Parallel Cat Swarm Optimizer, EPCSO-ANN) for industrial structural engineering & smart systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qualifications Section -->
+  <section class="section" id="qualifications" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">Educational Qualifications</h2>
+        <p class="section-subtitle">Consistent academic distinction across prestigious technical universities</p>
+      </div>
+
+      <div class="qualifications-grid">
+        <!-- Ph.D. -->
+        <div class="glass-card qualification-card">
+          <span class="qual-badge qual-badge-phd">Doctorate</span>
+          <h3 class="qual-degree">Ph.D.</h3>
+          <div class="qual-field">Computer Science and Engineering</div>
+          <div class="qual-inst">LNCT University, Bhopal</div>
+          <div class="qual-meta">
+            <span>Awarded: March 2024</span>
+            <span class="qual-grade">Doctor of Philosophy</span>
+          </div>
+        </div>
+
+        <!-- M.Tech -->
+        <div class="glass-card qualification-card" style="border: 1px solid rgba(245, 158, 11, 0.4);">
+          <span class="qual-badge qual-badge-mtech">Gold Medalist</span>
+          <h3 class="qual-degree">M.Tech.</h3>
+          <div class="qual-field">Artificial Intelligence</div>
+          <div class="qual-inst">RGPV Bhopal</div>
+          <div class="qual-meta">
+            <span>Dec 2007</span>
+            <span class="qual-grade">Distinction with Honors</span>
+          </div>
+        </div>
+
+        <!-- B.E. -->
+        <div class="glass-card qualification-card">
+          <span class="qual-badge qual-badge-be">Undergraduate</span>
+          <h3 class="qual-degree">B.E.</h3>
+          <div class="qual-field">Computer Engineering</div>
+          <div class="qual-inst">AVCOE, Pune University</div>
+          <div class="qual-meta">
+            <span>June 2001</span>
+            <span class="qual-grade">First Class</span>
+          </div>
+        </div>
+
+        <!-- Diploma -->
+        <div class="glass-card qualification-card">
+          <span class="qual-badge qual-badge-diploma">Diploma</span>
+          <h3 class="qual-degree">Diploma</h3>
+          <div class="qual-field">Computer Technology</div>
+          <div class="qual-inst">RPW College, Loni (Pravara Nagar)</div>
+          <div class="qual-meta">
+            <span>June 1997</span>
+            <span class="qual-grade">First Class (Mumbai Board)</span>
+          </div>
+        </div>
+
+        <!-- SSC -->
+        <div class="glass-card qualification-card">
+          <span class="qual-badge" style="background: rgba(100, 116, 139, 0.15); color: #94a3b8;">Secondary School</span>
+          <h3 class="qual-degree">S.S.C.</h3>
+          <div class="qual-field">Secondary School Certificate</div>
+          <div class="qual-inst">R.K. School, Chalisgaon</div>
+          <div class="qual-meta">
+            <span>June 1994</span>
+            <span class="qual-grade">Distinction (Pune Board)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intellectual Property (Patents & Copyrights) -->
+  <section class="section ip-section" id="ip">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Intellectual Property</span>
+        <h2 class="section-title">Patents & Copyrights</h2>
+        <p class="section-subtitle">Tangible innovations and intellectual property registered in intelligent systems</p>
+      </div>
+
+      <div class="ip-tabs">
+        <button class="ip-tab-btn active" data-filter="all">All IP (5)</button>
+        <button class="ip-tab-btn" data-filter="patent">Patents (2)</button>
+        <button class="ip-tab-btn" data-filter="copyright">Copyrights (3)</button>
+      </div>
+
+      <div class="ip-grid" id="ipGrid">
+        <!-- Patent 1 -->
+        <div class="glass-card ip-card tilt-element" data-category="patent">
+          <div class="ip-header">
+            <span class="ip-type-badge ip-type-patent">Patent</span>
+            <span class="ip-reg-no">Design No. 435834-001</span>
+          </div>
+          <h3 class="ip-title">An Electronic Device for Medical Image Denoising</h3>
+          <p class="ip-desc">A specialized electronic hardware-assisted architecture and computational framework tailored to eliminate noise artifacts from diagnostic medical scans while preserving critical boundary signals.</p>
+          <button class="patent-expand-btn" data-target="patent-detail-1" aria-expanded="false">
+            <span>+ Technical Specifications</span>
+          </button>
+          <div class="patent-extra-details" id="patent-detail-1">
+            <strong>Key Features:</strong> High-throughput noise suppression, preservation of tissue boundaries for MRI/CT, real-time clinical pre-processing integration.
+          </div>
+          <div class="ip-footer" style="margin-top: 1rem;">
+            <span style="color: var(--badge-text); font-weight: 600;">Government of India Patent Office</span>
+            <span style="color: var(--accent-emerald); font-weight: 600;">Published / Registered</span>
+          </div>
+        </div>
+
+        <!-- Patent 2 -->
+        <div class="glass-card ip-card tilt-element" data-category="patent">
+          <div class="ip-header">
+            <span class="ip-type-badge ip-type-patent">Patent</span>
+            <span class="ip-reg-no">Design No. 451980-001</span>
+          </div>
+          <h3 class="ip-title">Stereo Vision-Based Fruit Counting Device</h3>
+          <p class="ip-desc">A computer-vision embedded stereo imaging apparatus for accurate automated yield estimation, spatial recognition, and counting in smart precision agriculture.</p>
+          <button class="patent-expand-btn" data-target="patent-detail-2" aria-expanded="false">
+            <span>+ Technical Specifications</span>
+          </button>
+          <div class="patent-extra-details" id="patent-detail-2">
+            <strong>Key Features:</strong> Dual-lens stereoscopic depth sensing, occlusion-tolerant bounding algorithm, automated fruit localization for smart orchard harvesting.
+          </div>
+          <div class="ip-footer" style="margin-top: 1rem;">
+            <span style="color: var(--badge-text); font-weight: 600;">Government of India Patent Office</span>
+            <span style="color: var(--accent-emerald); font-weight: 600;">Published / Registered</span>
+          </div>
+        </div>
+
+        <!-- Copyright 1 -->
+        <div class="glass-card ip-card" data-category="copyright">
+          <div class="ip-header">
+            <span class="ip-type-badge ip-type-copyright">Copyright</span>
+            <span class="ip-reg-no">L-144309/2024</span>
+          </div>
+          <h3 class="ip-title">Literary/Dramatic Work: Image Denoising Framework</h3>
+          <p class="ip-desc">Mathematical models and algorithmic workflows engineered to systematically remove noise components from degraded images so as to reconstruct and restore original fidelity.</p>
+          <div class="ip-footer">
+            <span>Copyright Office, Govt. of India</span>
+            <span style="color: var(--accent-gold); font-weight: 600;">Registered 2024</span>
+          </div>
+        </div>
+
+        <!-- Copyright 2 -->
+        <div class="glass-card ip-card" data-category="copyright">
+          <div class="ip-header">
+            <span class="ip-type-badge ip-type-copyright">Copyright</span>
+            <span class="ip-reg-no">L-146485/2024</span>
+          </div>
+          <h3 class="ip-title">Brain Tumour Recognition & MRI Characterization using Neural Networks</h3>
+          <p class="ip-desc">Literary and technical work utilizing neural network (NN) approaches to boost diagnostic accuracy, feature extraction, and tumor characterization in MRI brain imaging.</p>
+          <div class="ip-footer">
+            <span>Copyright Office, Govt. of India</span>
+            <span style="color: var(--accent-gold); font-weight: 600;">Registered 2024</span>
+          </div>
+        </div>
+
+        <!-- Copyright 3 -->
+        <div class="glass-card ip-card" data-category="copyright">
+          <div class="ip-header">
+            <span class="ip-type-badge ip-type-copyright">Copyright</span>
+            <span class="ip-reg-no">L-150953/2024</span>
+          </div>
+          <h3 class="ip-title">Intelligent AI Assistant for More Productive Life</h3>
+          <p class="ip-desc">Conceptual and software architecture design for an intelligent conversational and predictive assistant model to streamline daily productivity and cognitive task execution.</p>
+          <div class="ip-footer">
+            <span>Copyright Office, Govt. of India</span>
+            <span style="color: var(--accent-gold); font-weight: 600;">Registered 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section class="section" id="publications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Scholarly Work</span>
+        <h2 class="section-title">Research Publications</h2>
+        <p class="section-subtitle">Peer-reviewed journal articles, IEEE conference proceedings, and indexed book chapters</p>
+      </div>
+
+      <div class="publications-controls">
+        <div class="pub-search-wrapper">
+          <svg class="pub-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="pubSearchInput" class="pub-search-input" placeholder="Search papers by keyword (e.g. Brain Tumor, Denoising, CNN, Blockchain, Cat Swarm)..." aria-label="Search research papers">
+        </div>
+
+        <div class="pub-filter-tabs">
+          <button class="pub-tab-btn active" data-filter="all">All Papers (11)</button>
+          <button class="pub-tab-btn" data-filter="medical">Medical AI & Denoising (5)</button>
+          <button class="pub-tab-btn" data-filter="ieee">IEEE Xplore / Conferences (4)</button>
+          <button class="pub-tab-btn" data-filter="applied">Applied Computing (3)</button>
+        </div>
+      </div>
+
+      <div class="pub-counter-strip" id="pubCounterStrip">Showing 11 of 11 publications</div>
+
+      <div class="publications-list" id="publicationsList">
+        <!-- Paper 1 -->
+        <article class="glass-card publication-card" data-category="medical" data-keywords="magnetic resonance imaging mri deep learning brain tumor systematic analysis multimedia tools applications springer">
+          <div class="pub-meta-top">
+            <span class="pub-year-badge">2023</span>
+            <span class="pub-venue-badge">Multimedia Tools and Applications (Springer)</span>
+            <span style="font-size: 0.78rem; color: var(--accent-emerald); font-weight: 600;">SCIE / Scopus</span>
+          </div>
+          <h3 class="pub-paper-title">A systematic analysis of magnetic resonance images and deep learning methods used for diagnosis of brain tumor</h3>
+          <div class="pub-authors">
+            <span class="author-highlight">Solanki, S.</span>, Singh, U.P., Chouhan, S.S. et al.
+          </div>
+          <div class="pub-details">
+            Multimed Tools Appl (2023). Comprehensive review of image preprocessing, MRI modality normalization, and deep neural networks for clinical brain tumor diagnosis.
+          </div>
+          <div class="pub-action-row">
+            <a href="https://doi.org/10.1007/s11042-023-16430-6" target="_blank" rel="noopener noreferrer" class="pub-doi-link">
+              <span>View via DOI</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          
+            <div class="pub-action-buttons">
+              <button class="pub-cite-btn" aria-label="Cite this publication">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path></svg>
+                <span>Cite</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 2 -->
+        <article class="glass-card publication-card" data-category="medical ieee" data-keywords="brain tumor detection classification intelligence techniques overview ieee access">
+          <div class="pub-meta-top">
+            <span class="pub-year-badge">2023</span>
+            <span class="pub-venue-badge">IEEE Access</span>
+            <span style="font-size: 0.78rem; color: var(--accent-emerald); font-weight: 600;">IEEE Journal • Q1</span>
+          </div>
+          <h3 class="pub-paper-title">Brain Tumor Detection and Classification Using Intelligence Techniques: An Overview</h3>
+          <div class="pub-authors">
+            <span class="author-highlight">S. Solanki</span>, U. P. Singh, S. S. Chouhan, and S. Jain
+          </div>
+          <div class="pub-details">
+            IEEE Access, vol. 11, pp. 12870-12886, 2023. Thorough taxonomy of intelligent classification systems, benchmarking deep learning models on brain neoplasm benchmarks.
+          </div>
+          <div class="pub-action-row">
+            <a href="https://doi.org/10.1109/ACCESS.2023.3242666" target="_blank" rel="noopener noreferrer" class="pub-doi-link">
+              <span>View on IEEE Xplore</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          
+            <div class="pub-action-buttons">
+              <button class="pub-cite-btn" aria-label="Cite this publication">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path></svg>
+                <span>Cite</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 3 -->
+        <article class="glass-card publication-card" data-category="medical" data-keywords="brain tumor detection classification deep learning classifier ijisae">
+          <div class="pub-meta-top">
+            <span class="pub-year-badge">2023</span>
+            <span class="pub-venue-badge">IJISAE</span>
+            <span style="font-size: 0.78rem; color: var(--accent-emerald); font-weight: 600;">Scopus Indexed</span>
+          </div>
+          <h3 class="pub-paper-title">Brain Tumor Detection and Classification by using Deep Learning Classifier</h3>
+          <div class="pub-authors">
+            <span class="author-highlight">Solanki, S.</span>, Singh, U. P., Chouhan, S. S., & Jain, S.
+          </div>
+          <div class="pub-details">
+            International Journal of Intelligent Systems and Applications in Engineering (IJISAE), 11(2s), 279-286. Empirical evaluation of deep CNN architecture for multi-class tumor differentiation.
+          </div>
+          <div class="pub-action-row">
+            <a href="https://ijisae.org/index.php/IJISAE/article/view/2624" target="_blank" rel="noopener noreferrer" class="pub-doi-link">
+              <span>View Article</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          
+            <div class="pub-action-buttons">
+              <button class="pub-cite-btn" aria-label="Cite this publication">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path></svg>
+                <span>Cite</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 4 -->
+        <article class="glass-card publication-card" data-category="medical" data-keywords="fractional-order variational residual cnn image denoising irjmets deep learning">
+          <div class="pub-meta-top">
+            <span class="pub-year-badge">2024</span>
+            <span class="pub-venue-badge">IRJMETS</span>
+          </div>
+          <h3 class="pub-paper-title">A Fractional-Order Variational Residual CNN for Image Denoising</h3>
+          <div class="pub-authors">
+            <span class="author-highlight">S. Solanki</span>, U. P. Singh, S. S. Chouhan
+          </div>
+          <div class="pub-details">
+            International Research Journal of Modernization in Engineering Technology and Science (IRJMETS), 2024. Proposed a novel fractional calculus variational regularizer embedded inside deep residual CNNs.
+          </div>
+          <div class="pub-action-row">
+            <a href="https://www.doi.org/10.56726/IRJMETS48895" target="_blank" rel="noopener noreferrer" class="pub-doi-link">
+              <span>View Publication</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          
+            <div class="pub-action-buttons">
+              <button class="pub-cite-btn" aria-label="Cite this publication">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path></svg>
+                <span>Cite</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 5 -->
+        <article class="glass-card publication-card" data-category="medical ieee" data-keywords="brain tumor detection classification ml dl ieee germany conference">
+          <div class="pub-meta-top">
+            <span class="pub-year-badge">Conference</span>
+            <span class="pub-venue-badge">IEEE Germany Section (Conf #58983)</span>
+          </div>
+          <h3 class="pub-paper-title">Brain Tumor Detection and Classification Using ML and DL approach</h3>
+          <div class="pub-authors">
+            <span class="author-highlight">S. Solanki</span>, U. P. Singh, S. S. Chouhan
+          </div>
+          <div class="pub-details">
+            Presented at IEEE Germany Section, examining comparative performance between classical ML classifiers and transfer-learned deep convolution pipelines.
+          </div>
+          <div class="pub-action-row">
+            <span class="pub-doi-link" style="color: var(--text-muted); cursor: default;">IEEE Conference #58983</span>
+          
+            <div class="pub-action-buttons">
+              <button class="pub-cite-btn" aria-label="Cite this publication">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path></svg>
+                <span>Cite</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 6 -->
+        <article class="glass-card publication-card" data-category="applied" data-keywords="machine vision jalopatra plant leaf disease detection icaett 2024 springer">
+          <div class="pub-meta-top">
+            <span class="pub-year-badge">2024</span>
+            <span class="pub-venue-badge">Springer ICAETT 2024</span>
+          </div>
+          <h3 class="pub-paper-title">Machine Vision Methodology For Jalopatra plant leaf disease detection</h3>
+          <div class="pub-authors">
+            <span class="author-highlight">S. Solanki</span> et al.
+          </div>
+          <div class="pub-details">
+            Trends in Computer Engineering, Data Science and Artificial Intelligence. Springer, DOI: 10.1007/978-3-032-10199-0_10. Computer vision pipeline for early botanical disease symptom isolation.
+          </div>
+          <div class="pub-action-row">
+            <a href="https://doi.org/10.1007/978-3-032-10199-0_10" target="_blank" rel="noopener noreferrer" class="pub-doi-link">
+              <span>View via Springer</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          
+            <div class="pub-action-buttons">
+              <button class="pub-cite-btn" aria-label="Cite this publication">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path></svg>
+                <span>Cite</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 7 -->
+        <article class="glass-card publication-card" data-category="ieee" data-keywords="tensile strength yield point steel bar artificial neural network cat swarm optimizer ieee xplore">
+          <div class="pub-meta-top">
+            <span class="pub-year-badge">2019</span>
+            <span class="pub-venue-badge">IEEE Xplore</span>
+          </div>
+          <h3 class="pub-paper-title">Optimizing Tensile Strength and Yield Point of Steel Bar with Artificial Neural Network with Enhanced Parallel Cat Swarm Optimizer</h3>
+          <div class="pub-authors">
+            D. Gurav, <span class="author-highlight">S. Patil</span>, J. Solanki
+          </div>
+          <div class="pub-details">
+            IEEE Xplore, DOI: 10.1109/GCWCN.2018.8668614. Applying bio-inspired meta-heuristic parallel cat swarm optimization to calibrate neural networks for industrial alloy quality control.
+          </div>
+          <div class="pub-action-row">
+            <a href="https://doi.org/10.1109/GCWCN.2018.8668614" target="_blank" rel="noopener noreferrer" class="pub-doi-link">
+              <span>View on IEEE Xplore</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          
+            <div class="pub-action-buttons">
+              <button class="pub-cite-btn" aria-label="Cite this publication">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path></svg>
+                <span>Cite</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 8 -->
+        <article class="glass-card publication-card" data-category="applied" data-keywords="epcso based ann tensile strength steel bar ijtrd">
+          <div class="pub-meta-top">
+            <span class="pub-year-badge">2017</span>
+            <span class="pub-venue-badge">IJTRD</span>
+          </div>
+          <h3 class="pub-paper-title">Modelling and optimizing Tensile strength and yield point of Steel Bar with EPCSO based ANN</h3>
+          <div class="pub-authors">
+            D. Gurav, <span class="author-highlight">S. Patil</span>
+          </div>
+          <div class="pub-details">
+            International Journal of Trend in Research and Development (IJTRD), Vol 4(4), ISSN: 2394-9333. Investigated swarm intelligence algorithms for material property modeling.
+          </div>
+          <div class="pub-action-row">
+            <div class="pub-action-buttons">
+              <button class="pub-cite-btn" aria-label="Cite this publication">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path></svg>
+                <span>Cite</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 9 -->
+        <article class="glass-card publication-card" data-category="applied" data-keywords="smart control online examination system blockchain ijarsct">
+          <div class="pub-meta-top">
+            <span class="pub-year-badge">2023</span>
+            <span class="pub-venue-badge">IJARSCT</span>
+          </div>
+          <h3 class="pub-paper-title">Smart Control Enabled Online Examination System Based On Blockchain</h3>
+          <div class="pub-authors">
+            <span class="author-highlight">S. R. Patil</span> et al.
+          </div>
+          <div class="pub-details">
+            IJARSCT, Vol 3, Issue 9, DOI: 10.48175/568. Secure, decentralized architecture for authentic evaluation and non-repudiable certificate verification.
+          </div>
+          <div class="pub-action-row">
+            <a href="https://doi.org/10.48175/568" target="_blank" rel="noopener noreferrer" class="pub-doi-link">
+              <span>View DOI</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          
+            <div class="pub-action-buttons">
+              <button class="pub-cite-btn" aria-label="Cite this publication">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path></svg>
+                <span>Cite</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 10 -->
+        <article class="glass-card publication-card" data-category="applied" data-keywords="smart supermarket billing system python ijasret">
+          <div class="pub-meta-top">
+            <span class="pub-year-badge">2021</span>
+            <span class="pub-venue-badge">IJASRET</span>
+          </div>
+          <h3 class="pub-paper-title">SMART SUPERMARKET BILLING SYSTEM USING PYTHON</h3>
+          <div class="pub-authors">
+            <span class="author-highlight">S. R. Patil</span> et al.
+          </div>
+          <div class="pub-details">
+            International Journal of Advances in Scientific Research and Engineering (IJASRET), Vol 5, Issue 21. IoT and software integration for frictionless retail inventory & checkout.
+          </div>
+          <div class="pub-action-row">
+            <div class="pub-action-buttons">
+              <button class="pub-cite-btn" aria-label="Cite this publication">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path></svg>
+                <span>Cite</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 11 -->
+        <article class="glass-card publication-card" data-category="applied" data-keywords="imdb movie rating prediction machine learning ijarsct">
+          <div class="pub-meta-top">
+            <span class="pub-year-badge">Publication</span>
+            <span class="pub-venue-badge">IJARSCT</span>
+          </div>
+          <h3 class="pub-paper-title">IMDB Movie Rating Prediction Using Machine Learning</h3>
+          <div class="pub-authors">
+            <span class="author-highlight">S. Patil</span>, Jogendrasingh Solanki
+          </div>
+          <div class="pub-details">
+            IJARSCT (3), 12, DOI: 10.48175/568. Feature engineering and regression analysis applied to cinematic metadata for sentiment and rating forecasts.
+          </div>
+          <div class="pub-action-row">
+            <a href="https://doi.org/10.48175/568" target="_blank" rel="noopener noreferrer" class="pub-doi-link">
+              <span>View DOI</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          
+            <div class="pub-action-buttons">
+              <button class="pub-cite-btn" aria-label="Cite this publication">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path></svg>
+                <span>Cite</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Leadership Timeline -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career Journey</span>
+        <h2 class="section-title">Experience & Leadership</h2>
+        <p class="section-subtitle">23+ years of progressive academic leadership and departmental governance</p>
+      </div>
+
+      <div class="timeline-layout">
+        <!-- Chronological Timeline -->
+        <div class="timeline">
+          <!-- PCU -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-period">Current Affiliation</div>
+            <h3 class="timeline-role">Associate Professor</h3>
+            <div class="timeline-organization">School of Engineering & Technology, PCET's Pimpri Chinchwad University, Pune</div>
+            <div class="timeline-desc">Leading advanced courses in CSE, delivering keynote expert sessions on Theory of Computation, and mentoring students in cutting-edge AI research projects.</div>
+          </div>
+
+          <!-- Sinhgad SIT -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-period">2010 – 2024 (14+ Years)</div>
+            <h3 class="timeline-role">Head of Department (HOD) & Associate Professor</h3>
+            <div class="timeline-organization">Sinhgad Institute of Technology (SIT), Lonavala</div>
+            <div class="timeline-desc">Served as HOD for Computer Engineering. Guided hundreds of engineering graduates, spearheaded NBA and NAAC accreditation protocols, founded the ACM Student Chapter, and led laboratory modernization.</div>
+          </div>
+
+          <!-- KGCE Karjat -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-period">2008 – 2010</div>
+            <h3 class="timeline-role">Assistant Professor & Head of Department</h3>
+            <div class="timeline-organization">KGCE Karjat, Maharashtra</div>
+            <div class="timeline-desc">Oversaw department curriculum delivery, faculty coordination, and academic administration.</div>
+          </div>
+
+          <!-- KMC Khopoli -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-period">2007 – 2008</div>
+            <h3 class="timeline-role">Incharge Head for M.Sc. Computer Science</h3>
+            <div class="timeline-organization">KMC College, Khopoli, Maharashtra</div>
+            <div class="timeline-desc">Led the postgraduate department, supervised master's research dissertations, and coordinated university examinations.</div>
+          </div>
+
+          <!-- LNCT Bhopal -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-period">2006 – 2007</div>
+            <h3 class="timeline-role">Lecturer in Computer Engineering</h3>
+            <div class="timeline-organization">LNCT Bhopal, Madhya Pradesh</div>
+            <div class="timeline-desc">Taught foundational computing subjects and supervised academic laboratory sessions.</div>
+          </div>
+
+          <!-- RCPIT Shirpur -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-period">2003 – 2006</div>
+            <h3 class="timeline-role">Lecturer in Computer Engineering</h3>
+            <div class="timeline-organization">RCPIT, Shirpur, Maharashtra</div>
+            <div class="timeline-desc">Contributed to syllabus setting for North Maharashtra University and guided project batches.</div>
+          </div>
+
+          <!-- Indira Gandhi College -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-period">2002 – 2003</div>
+            <h3 class="timeline-role">Lecturer in Computer Department</h3>
+            <div class="timeline-organization">Indira Gandhi College, Belvandi, Maharashtra</div>
+            <div class="timeline-desc">Initial academic appointment teaching core principles of computer systems.</div>
+          </div>
+        </div>
+
+        <!-- Institutional & Governance Roles -->
+        <div class="responsibilities-container">
+          <h3>Academic Governance & Committees</h3>
+          <div class="resp-cards-grid">
+            <div class="glass-card resp-card">
+              <div class="resp-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div class="resp-text">
+                <h5>NBA & NAAC Department Coordinator</h5>
+                <p>Formulated comprehensive Self-Assessment Reports (SAR) and facilitated accreditation audit compliance.</p>
+              </div>
+            </div>
+
+            <div class="glass-card resp-card">
+              <div class="resp-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div class="resp-text">
+                <h5>Staff Selection Committee Member</h5>
+                <p>Appointed member of Mumbai University staff selection committee for faculty evaluations.</p>
+              </div>
+            </div>
+
+            <div class="glass-card resp-card">
+              <div class="resp-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="resp-text">
+                <h5>Subject Chairman & Paper Setter</h5>
+                <p>Subject Chairman at North Maharashtra University and Mumbai University; official Paper Setter at Savitribai Phule Pune University (SPPU).</p>
+              </div>
+            </div>
+
+            <div class="glass-card resp-card">
+              <div class="resp-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <div class="resp-text">
+                <h5>National FDP Convener</h5>
+                <p>Convener for National-level Faculty Development Programs (FDP) empowering technical educators.</p>
+              </div>
+            </div>
+
+            <div class="glass-card resp-card">
+              <div class="resp-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              </div>
+              <div class="resp-text">
+                <h5>Curriculum & Syllabus Setting</h5>
+                <p>Active contributor to syllabus formulation conferences for B.E. Computer & B.E. IT at North Maharashtra University.</p>
+              </div>
+            </div>
+
+            <div class="glass-card resp-card">
+              <div class="resp-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="19" y1="8" x2="19" y2="14"></line><line x1="22" y1="11" x2="16" y2="11"></line></svg>
+              </div>
+              <div class="resp-text">
+                <h5>ACM Student Chapter Coordinator</h5>
+                <p>Mentored student chapter activities, hackathons, and technical symposia (Tectonic Event Coordinator).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaching & Mentorship -->
+  <section class="section" id="teaching">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pedagogy</span>
+        <h2 class="section-title">Teaching & Expert Sessions</h2>
+        <p class="section-subtitle">Cultivating foundational computational theory and emerging AI capabilities</p>
+      </div>
+
+      <div class="teaching-grid">
+        <div class="glass-card">
+          <h3>Core Subjects Handled</h3>
+          <p style="margin-bottom: 1.5rem;">Dr. Shubhangi Patil has designed curricula, led laboratories, and instructed undergraduate and graduate engineering cohorts across key domains:</p>
+          
+          <div class="subject-chips-wrap">
+            <div class="subject-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+              <span>Artificial Intelligence</span>
+            </div>
+            <div class="subject-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line></svg>
+              <span>Deep Learning</span>
+            </div>
+            <div class="subject-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+              <span>Theory of Computation</span>
+            </div>
+            <div class="subject-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              <span>Computer Graphics</span>
+            </div>
+            <div class="subject-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              <span>Database Management Systems</span>
+            </div>
+            <div class="subject-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <span>Software Engineering</span>
+            </div>
+            <div class="subject-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+              <span>Data Communication</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Keynote / Event Card -->
+        <div class="event-feature-card">
+          <div class="event-feature-img-wrapper" id="openPosterModalBtn" title="Click to view full event poster">
+            <img src="assets/pcu_event_poster.jpg" alt="Theory of Computation Session at PCU" class="event-feature-img">
+            <div class="event-overlay-badge">Featured Session</div>
+          </div>
+          <div class="event-feature-body">
+            <h4>Theory of Computation: Building Foundations</h4>
+            <p>
+              Keynote session delivered in collaboration with Institution's Innovation Council (IIC) and CSE Department at PCET's Pimpri Chinchwad University, Pune. Aligned with UN Sustainable Development Goals (SDG 4, 9, 10, 17).
+            </p>
+            <button class="btn btn-secondary" id="viewPosterBtn" style="width: 100%;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+              <span>View Official Poster</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Memberships -->
+  <section class="section" id="memberships" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Affiliations</span>
+        <h2 class="section-title">Professional Memberships</h2>
+        <p class="section-subtitle">Affiliated with premier global and national engineering institutions</p>
+      </div>
+
+      <div class="memberships-grid">
+        <!-- ACM -->
+        <div class="glass-card membership-card">
+          <div class="membership-logo-row">
+            <span class="membership-badge-code membership-acm">acm</span>
+            <span class="membership-id-pill">ID: 3273899</span>
+          </div>
+          <h3 class="membership-name">Association for Computing Machinery</h3>
+          <div class="membership-role">Professional Member</div>
+          <p>Admitted as Professional Member since March 2022. Serving as ACM Student Chapter Coordinator and fostering research excellence.</p>
+          <div class="membership-action">
+            <button class="btn btn-secondary" id="openAcmCertBtn" style="width: 100%; font-size: 0.85rem; padding: 0.6rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              <span>View Membership Certificate</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- IEEE -->
+        <div class="glass-card membership-card">
+          <div class="membership-logo-row">
+            <span class="membership-badge-code membership-ieee">IEEE</span>
+            <span class="membership-id-pill">ID: 98733360</span>
+          </div>
+          <h3 class="membership-name">Institute of Electrical and Electronics Engineers</h3>
+          <div class="membership-role">Professional Member</div>
+          <p>Active contributor to IEEE conferences, publications in IEEE Access, and reviewer for intelligent systems engineering tracks.</p>
+          <div class="membership-action">
+            <span style="font-size: 0.82rem; color: var(--accent-primary); font-weight: 600;">Global Research Network</span>
+          </div>
+        </div>
+
+        <!-- ISTE -->
+        <div class="glass-card membership-card">
+          <div class="membership-logo-row">
+            <span class="membership-badge-code membership-iste">ISTE</span>
+            <span class="membership-id-pill">LM: 44676</span>
+          </div>
+          <h3 class="membership-name">Indian Society for Technical Education</h3>
+          <div class="membership-role">Life Member</div>
+          <p>Life Member actively supporting national technical education enhancement, faculty development workshops, and student mentorship.</p>
+          <div class="membership-action">
+            <span style="font-size: 0.82rem; color: var(--accent-gold); font-weight: 600;">Life Member (LM: 44676)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Dr. Shubhangi Patil-Solanki</h2>
+        <p class="section-subtitle">Open for research collaborations, academic keynotes, and institutional mentoring</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info-cards">
+          <div class="glass-card contact-card">
+            <div class="contact-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-text">
+              <h5>Email Address</h5>
+              <p><a href="mailto:solanki.shubhangi@gmail.com" id="emailLink">solanki.shubhangi@gmail.com</a></p>
+            </div>
+            <button class="btn btn-secondary" id="copyEmailBtn" style="margin-left: auto; padding: 0.4rem 0.75rem; font-size: 0.8rem;" title="Copy Email">Copy</button>
+          </div>
+
+          <div class="glass-card contact-card">
+            <div class="contact-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div class="contact-text">
+              <h5>Phone Number</h5>
+              <p><a href="tel:+919921272469">+91 9921272469</a></p>
+            </div>
+            <button class="btn btn-secondary" id="copyPhoneBtn" style="margin-left: auto; padding: 0.4rem 0.75rem; font-size: 0.8rem;" title="Copy Phone">Copy</button>
+          </div>
+
+          <div class="glass-card contact-card">
+            <div class="contact-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="contact-text">
+              <h5>Current Institution</h5>
+              <p>School of Engineering & Technology, PCET's Pimpri Chinchwad University, Pune, Maharashtra, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form id="contactForm">
+            <h3 style="margin-bottom: 1.25rem;">Send a Message</h3>
+            <div class="form-group">
+              <label for="contactName" class="form-label">Your Name</label>
+              <input type="text" id="contactName" class="form-input" placeholder="Prof. / Dr. / Mr. / Ms. Name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Your Email</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="name@institution.edu" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Subject</label>
+              <input type="text" id="contactSubject" class="form-input" placeholder="Research Collaboration / Guest Lecture / Query" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message</label>
+              <textarea id="contactMessage" class="form-textarea" rows="4" placeholder="Brief details regarding your query or proposed collaboration..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="sendMessageBtn" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              <span>Submit Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>Dr. Shubhangi R. Patil-Solanki</h4>
+          <p>Associate Professor, Department of Computer Science & Engineering, PCET's Pimpri Chinchwad University, Pune.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Quick Navigation</h5>
+          <div class="footer-links">
+            <a href="#about">About Dr. Patil</a>
+            <a href="#qualifications">Academic Qualifications</a>
+            <a href="#ip">Patents & Copyrights</a>
+            <a href="#publications">Research Publications</a>
+            <a href="#experience">Experience & Governance</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Professional Affiliations</h5>
+          <div class="footer-links">
+            <a href="assets/ACMcertificate.pdf" target="_blank">ACM Certificate (PDF)</a>
+            <a href="assets/Dr_Shubhangi_Patil_CV.pdf" target="_blank">Download Resume (PDF)</a>
+            <a href="#memberships">IEEE & ISTE Memberships</a>
+            <a href="#teaching">Theory of Computation Session</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Dr. Shubhangi R. Patil-Solanki. All rights reserved.</div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="#home" style="color: var(--badge-text); font-weight: 600;">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ACM Certificate Modal -->
+  <div class="modal-backdrop" id="acmModal" role="dialog" aria-modal="true" aria-labelledby="acmModalTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="acmModalTitle">ACM Professional Membership Certificate</h3>
+        <button class="modal-close-btn" id="closeAcmModalBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/acm_certificate.png" alt="ACM Certificate for Shubhangi Patil" class="modal-preview-img">
+        <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1rem;">
+          <a href="assets/ACMcertificate.pdf" target="_blank" class="btn btn-secondary">Open Original PDF</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Poster Modal -->
+  <div class="modal-backdrop" id="posterModal" role="dialog" aria-modal="true" aria-labelledby="posterModalTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="posterModalTitle">PCET's PCU Event Poster</h3>
+        <button class="modal-close-btn" id="closePosterModalBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/pcu_event_poster.jpg" alt="Theory of Computation Event Poster" class="modal-preview-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- Citation Generator Modal -->
+  <div class="modal-backdrop" id="citationModal" role="dialog" aria-modal="true" aria-labelledby="citationModalTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="citationModalTitle">Cite Publication</h3>
+        <button class="modal-close-btn" id="closeCitationModalBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: left;">
+        <div class="citation-tab-bar">
+          <button class="citation-tab active" data-format="bibtex">BibTeX</button>
+          <button class="citation-tab" data-format="apa">APA</button>
+          <button class="citation-tab" data-format="mla">MLA</button>
+        </div>
+        <pre class="citation-code-block" id="citationText"></pre>
+        <div class="citation-modal-footer">
+          <button class="btn btn-primary" id="copyCitationBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy Citation</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Scroll Progress & Back to Top -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
+    <svg class="progress-ring" viewBox="0 0 48 48">
+      <circle class="progress-ring-circle" id="progressRingCircle" cx="24" cy="24" r="22"></circle>
+    </svg>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Javascript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
