@@ -298,12 +298,23 @@ document.addEventListener('DOMContentLoaded', () => {
   let activePubCategory = 'all';
   let searchQuery = '';
 
-  // Store original titles for unhighlighting
-  const originalTitles = new Map();
+  // Store original titles and link targets for unhighlighting
+  const originalTitleData = new Map();
   pubCards.forEach(card => {
+    const linkEl = card.querySelector('.pub-paper-title a');
     const titleEl = card.querySelector('.pub-paper-title');
-    if (titleEl) {
-      originalTitles.set(card, titleEl.textContent);
+    if (linkEl) {
+      originalTitleData.set(card, {
+        text: linkEl.textContent.trim(),
+        href: linkEl.getAttribute('href'),
+        hasLink: true
+      });
+    } else if (titleEl) {
+      originalTitleData.set(card, {
+        text: titleEl.textContent.trim(),
+        href: '',
+        hasLink: false
+      });
     }
   });
 
@@ -313,23 +324,36 @@ document.addEventListener('DOMContentLoaded', () => {
     pubCards.forEach(card => {
       const categories = card.getAttribute('data-category') || '';
       const keywords = (card.getAttribute('data-keywords') || '').toLowerCase();
-      const rawTitle = originalTitles.get(card) || '';
+      const data = originalTitleData.get(card);
+      const rawText = data ? data.text : '';
       const titleEl = card.querySelector('.pub-paper-title');
       const textContent = card.textContent.toLowerCase();
 
       const matchesCategory = (activePubCategory === 'all') || categories.includes(activePubCategory);
-      const matchesSearch = !searchQuery || keywords.includes(searchQuery) || textContent.includes(searchQuery);
+      const matchesSearch = !searchQuery || keywords.includes(searchQuery) || textContent.includes(searchQuery) || rawText.toLowerCase().includes(searchQuery);
 
       if (matchesCategory && matchesSearch) {
         card.style.display = 'flex';
         visibleCount++;
 
-        // Highlight matching terms in title
-        if (searchQuery && titleEl) {
-          const regex = new RegExp(`(${searchQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-          titleEl.innerHTML = rawTitle.replace(regex, '<mark class="search-highlight">$1</mark>');
-        } else if (titleEl) {
-          titleEl.textContent = rawTitle;
+        // Highlight matching terms in title while preserving clickable link
+        if (titleEl && data) {
+          const iconSvg = `<svg class="external-link-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>`;
+          if (searchQuery) {
+            const regex = new RegExp(`(${searchQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+            const highlighted = data.text.replace(regex, '<mark class="search-highlight">$1</mark>');
+            if (data.hasLink) {
+              titleEl.innerHTML = `<a href="${data.href}" target="_blank" rel="noopener noreferrer">${highlighted} ${iconSvg}</a>`;
+            } else {
+              titleEl.innerHTML = highlighted;
+            }
+          } else {
+            if (data.hasLink) {
+              titleEl.innerHTML = `<a href="${data.href}" target="_blank" rel="noopener noreferrer">${data.text} ${iconSvg}</a>`;
+            } else {
+              titleEl.textContent = data.text;
+            }
+          }
         }
       } else {
         card.style.display = 'none';
